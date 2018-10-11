@@ -5,9 +5,6 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="/">{{NAV_START}} <span class="sr-only">(current)</span></a>
-          </li>
           <li class="nav-item">
             <a class="nav-link" href="/?s=input_material">{{NAV_INPUT_MATERIAL}}</a>
           </li>
@@ -16,9 +13,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/?s=list_catergory">{{NAV_LIST_CATEGORY}}</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/?s=single_material">{{NAV_SINGLE_MATERIAL}}</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/?s=random_material">{{NAV_RANDOM_MATERIAL}}</a>

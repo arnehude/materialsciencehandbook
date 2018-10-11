@@ -1,7 +1,9 @@
 body {
   font-size: .875rem;
 }
-
+form-check-input:checked {
+    background-color: #99ff99;
+}
 .feather {
   width: 16px;
   height: 16px;

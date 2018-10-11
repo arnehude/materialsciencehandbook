@@ -1,7 +1,10 @@
 <?php
-    $site = $_GET['s'];  
+    include './php/functions.php';
+    $site = @$_GET['s'];  
     if($site == NULL || $site == 'start')
         $site = 'start';
+    $url = './templates/'.$site.'.php';
+    $site_content = file_get_contents($url);
 ?>
 
 <!doctype html>
@@ -19,19 +22,14 @@
   </head>
   <body>
      
-    <?php require './php/navigation.php';?>
-    
-    <?php if(!$content = file_get_contents($site)){}?>
-
+    <?php 
+    echo parse_language(file_get_contents('./php/navigation.php')); ?>
       
-    <div class="row">
-        <main role="main" class="col-md-12 ml-sm-auto col-lg-12 px-4">
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">Dashboard</h1>
-          </div>
-        </main>
-    </div>
       
+    <main role="main" class="col-md-12 ml-sm-auto col-lg-12 px-4">
+    <?php if(isset($site_content)){echo parse_language(($site_content));}//else{error_log(1, 404);}?>
+    </main>
+     
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
