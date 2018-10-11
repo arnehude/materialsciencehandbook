@@ -47,33 +47,30 @@ class materials{
         }
     }
     public function get_material($post){
-        $data['customer'] = $this->filter($post['customer']);
-        $data['pricecat'] = $this->filter($post['pricecat']);
-        $data['weight'] = $this->filter($post['weight']);
-        $data['printer'] = $this->filter($post['printer']);      
-        $data['filament'] = $this->filter($post['filament']);      
-        $data['description'] = $this->filter($post['description']);
+        foreach ($post as $key => $value) {
+            $data[$key] = $this->filter($value);
+        }
         return $data;        
     }
     
     public function save_material($mysqli,$post){
         $data = $this->get_material($post);
-        $query_history =
-            "   INSERT INTO `history` 
-                (`username`, `operator`, `weight`, `pricecat`, `price`, `filament`, `printer`, `printedat`, `description`) 
-        VALUES  (   '".$data['customer']."',  
-                    '".$data['operator']."', 
-                    '".$data['weight']."', 
-                    '".$data['pricecat']."', 
-                    '".$data['filament']."', 
-                    '".$data['printer']."');";
-        
-        if($mysqli->query($query_history)){
-            $url = "/?s=history";
-            header("Location: $url");
-        }else{
-            echo 'error';
-        }
+//        $query_history =
+//            "   INSERT INTO `history` 
+//                (`username`, `operator`, `weight`, `pricecat`, `price`, `filament`, `printer`, `printedat`, `description`) 
+//        VALUES  (   '".$data['customer']."',  
+//                    '".$data['operator']."', 
+//                    '".$data['weight']."', 
+//                    '".$data['pricecat']."', 
+//                    '".$data['filament']."', 
+//                    '".$data['printer']."');";
+//        
+//        if($mysqli->query($query_history)){
+//            $url = "/?s=history";
+//            header("Location: $url");
+//        }else{
+//            echo 'error';
+//        }
     }
 }
 
