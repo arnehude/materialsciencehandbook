@@ -1,3 +1,9 @@
+<?php
+    $site = $_GET['s'];  
+    if($site == NULL || $site == 'start')
+        $site = 'start';
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -12,8 +18,11 @@
     <title>Hello, world!</title>
   </head>
   <body>
+     
+    <?php require './php/navigation.php';?>
+    
+    <?php if(!$content = file_get_contents($site)){}?>
 
-          
       
     <div class="row">
         <main role="main" class="col-md-12 ml-sm-auto col-lg-12 px-4">
