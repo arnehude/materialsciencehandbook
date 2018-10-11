@@ -1,6 +1,6 @@
 <legend>{{INPUT_MATERIAL_HEADING}}</legend>
 <div>
-<form action="<?php echo '/php/';?>input_material_into_SQL.php" method="post" class="form-horizontal">
+<form action="/php/input_material_into_SQL.php" method="post" class="form-horizontal">
 <fieldset>
 
 <div class="form-group">
