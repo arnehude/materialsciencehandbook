@@ -9,6 +9,9 @@
             <a class="nav-link" href="/?s=input_material">{{NAV_INPUT_MATERIAL}}</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="/?s=list_all">{{NAV_MATERIAL_LIST}}</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="/?s=list_all">{{NAV_LIST_ALL}}</a>
           </li>
           <li class="nav-item">

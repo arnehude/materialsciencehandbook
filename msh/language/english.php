@@ -1,8 +1,8 @@
 <?php
 
-
 $en['NAV_START']                        = "Navigation";
-$en['NAV_INPUT_MATERIAL']               = "Add materials";
+$en['NAV_INPUT_MATERIAL']               = "Add materials (For DEV-Purposes)";
+$en['NAV_MATERIAL_LIST']                = "Materiallist (For DEV-Purposes)";
 $en['NAV_LIST_ALL']                     = "List all";
 $en['NAV_LIST_CATEGORY']                = "List by Category";
 $en['NAV_SINGLE_MATERIAL']              = "Navigation";
@@ -31,8 +31,20 @@ $en['MATERIAL_MELTINGPOINT']            = "Meltingpoint";
 $en['MATERIAL_YOUNGS_MODULE']           = "Youngs Module";
 $en['MATERIAL_ADDITIONAL_INFORMATION']  = "Additional information";
 
+include_once './php/get_all_materials.php';
+$mysqli = new mysqli(MYSQLI_HOST, MYSQLI_USER, MYSQLI_PASS, MYSQLI_BASE);
+$en['LIST_ALL_MATERIALS']               = get_materials($mysqli);;
 
 $en['TRUE']                             = "True";
 $en['FALSE']                            = "False";
 $en['SUBMIT']                           = "Submit";
+
+
+
+
+
+
+
+
+
 ?>

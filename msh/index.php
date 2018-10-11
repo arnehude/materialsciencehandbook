@@ -1,6 +1,9 @@
 <?php
+    require './php/session.php';
     include './php/functions.php';
+    include './php/config.php';
     $site = @$_GET['s'];  
+    $lang = @$_GET['lang'];
     if($site == NULL || $site == 'start')
         $site = 'start';
     $url = './templates/'.$site.'.php';
@@ -23,11 +26,11 @@
   <body>
      
     <?php 
-    echo parse_language(file_get_contents('./php/navigation.php')); ?>
+    echo parse_language(file_get_contents('./php/navigation.php'),$lang); ?>
       
       
     <main role="main" class="col-md-12 ml-sm-auto col-lg-12 px-4">
-    <?php if(isset($site_content)){echo parse_language(($site_content));}//else{error_log(1, 404);}?>
+    <?php if(isset($site_content)){echo parse_language(($site_content),$lang);}//else{error_log(1, 404);}?>
     </main>
      
     <!-- Optional JavaScript -->
