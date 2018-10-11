@@ -5,6 +5,13 @@ function replace_placeholders($content,$language){
     }
     return $content;
 }
+function controll_language($content){
+    if(preg_match('{{{[A-Za-z_]*}}}', $content)){
+        return parse_language($content, 'en');
+    } else {
+        return $content;
+    }
+}
 
 function parse_language($to_parse, $language = 'en')
 {
@@ -15,11 +22,11 @@ function parse_language($to_parse, $language = 'en')
             break;
         case 'de':
             require './language/german.php';
-            $content = replace_placeholders($to_parse, $en);
+            $content = replace_placeholders($to_parse, @$de);
             break;
         case 'fr':
             require './language/french.php';
-            $content = replace_placeholders($to_parse, $en);
+            $content = replace_placeholders($to_parse, @$fr);
             break;
 
         default:
@@ -27,5 +34,6 @@ function parse_language($to_parse, $language = 'en')
             $content = replace_placeholders($to_parse, $en);
             break;
     }
+    $content = controll_language($content);
     return $content;
 }
