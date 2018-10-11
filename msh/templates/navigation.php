@@ -7,21 +7,25 @@
       <div class="collapse navbar-collapse" id="navbarsExample04">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/">{{NAV_START}} <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="/?s=input_material">{{NAV_INPUT_MATERIAL}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Disabled</a>
+            <a class="nav-link" href="/?s=list_all">{{NAV_LIST_ALL}}</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown04">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
+          <li class="nav-item">
+            <a class="nav-link" href="/?s=list_catergory">{{NAV_LIST_CATEGORY}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/?s=single_material">{{NAV_SINGLE_MATERIAL}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/?s=random_material">{{NAV_RANDOM_MATERIAL}}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/?s=about">{{NAV_ABOUT}}</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-md-0">
