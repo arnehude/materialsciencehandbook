@@ -12,6 +12,7 @@ $en['NAV_ABOUT']                        = "About";
 
 $en['INPUT_MATERIAL_HEADING']           = "Insert material into database";
 $en['MATERIAL_NAME']                    = "Name of the material";
+$en['MATERIAL_CATEGORY']                = "Category";
 $en['MATERIAL_DENSITY']                 = "Density";
 $en['MATERIAL_PICTURE_NAME']            = "Picture of the material (<2 MByte, PNG)";
 $en['MATERIAL_SIGN']                    = "How to recycle";

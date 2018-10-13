@@ -15,10 +15,14 @@ function get_materials($mysqli){
     }
     $n = 0;
     $content ="";
-    foreach ($materials[$n] as $key => $value) {
+    foreach ($materials as $material) {
+        foreach ($material as $key => $value) {
+            $content .=  $key.':___________________'.$value.'<br/>';
+        }
+        $content.='<br/><br/>';
         $n++;
-        $content .=  $key.':___________________'.$value.'<br/>';
     }
+
     return $content;
 }
 

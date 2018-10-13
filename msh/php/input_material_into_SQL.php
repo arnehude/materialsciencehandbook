@@ -54,27 +54,57 @@ class materials{
     }
     
     public function save_material($mysqli,$post){
-        $data = $this->get_material($post);
-//        $query_history =
-//            "   INSERT INTO `history` 
-//                (`username`, `operator`, `weight`, `pricecat`, `price`, `filament`, `printer`, `printedat`, `description`) 
-//        VALUES  (   '".$data['customer']."',  
-//                    '".$data['operator']."', 
-//                    '".$data['weight']."', 
-//                    '".$data['pricecat']."', 
-//                    '".$data['filament']."', 
-//                    '".$data['printer']."');";
-//        
-//        if($mysqli->query($query_history)){
-//            $url = "/?s=history";
-//            header("Location: $url");
-//        }else{
-//            echo 'error';
-//        }
+        $d = $this->get_material($post);
+        
+        $sql = "INSERT INTO `materials` (
+            `name`,
+            `category`,
+            `density`,
+            `picture`,
+            `sign`,
+            `electric_insulator`,
+            `thermal_insulator`,
+            `phonic_insulator`,
+            `inflamable`,
+            `mechanical_stress`,
+            `elongation_at_break`,
+            `breakingpoint`,
+            `price_per_kg`,
+            `meltingpoint`,
+            `youngs_module`,
+            `additional_information`,
+            `added`)
+            VALUES 
+            ('".$d['MATERIAL_NAME']."',
+              '".$d['MATERIAL_CATEGORY']."',
+              '".$d['MATERIAL_DENSITY']."',
+              '".$d['MATERIAL_PICTURE_NAME']."',
+              '".$d['MATERIAL_SIGN']."',
+                  
+              '".$d['MATERIAL_ELECTRICAL_INSULATOR']."',
+              '".$d['MATERIAL_THERMAL_INSULATOR']."',
+              '".$d['MATERIAL_PHONIC_INSULATOR']."',
+              '".$d['MATERIAL_INFLAMABLE']."',
+              '".$d['MATERIAL_MECHANICAL_STRESS']."',
+                  
+              '".$d['MATERIAL_ELONGATION_AT_BREAK']."',
+              '".$d['MATERIAL_BREAKINGPOINT']."',
+              '".$d['MATERIAL_PRICE_PER_KG']."',
+              '".$d['MATERIAL_MELTINGPOINT']."',
+              '".$d['MATERIAL_YOUNGS_MODULE']."',
+                  
+              '".$d['MATERIAL_ADDITIONAL_INFORMATION']."',
+            'CURRENT_TIMESTAMP');";       
+        if($mysqli->query($sql)){
+            $url = "/?s=input_material";
+            header("Location: $url");
+        }else{
+            echo 'error';
+        }
     }
 }
 
 if (isset($_POST['submit'])){
-    $print = new materials;
-    $print->save_material($mysqli,$_POST);    
+    $mat = new materials;
+    $mat->save_material($mysqli,$_POST);    
 }

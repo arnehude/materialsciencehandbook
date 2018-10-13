@@ -9,7 +9,16 @@
     <input id="customer" name="MATERIAL_NAME" type="text" class="form-control input-md" />
   </div>
 </div>
+<br/>
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="MATERIAL_CATEGORY">{{MATERIAL_CATEGORY}}</label>  
+  <div >
+    <input id="customer" name="MATERIAL_CATEGORY" type="text" class="form-control input-md" />
+  </div>
+</div>
 <br/> 
+
 <div class="form-group">
   <label class="col-md-4 control-label" for="MATERIAL_DENSITY">{{MATERIAL_DENSITY}}</label>  
   <div >
