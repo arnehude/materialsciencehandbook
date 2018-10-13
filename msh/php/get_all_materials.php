@@ -4,6 +4,8 @@ function get_materials($mysqli){
     $query_id_des = "SELECT * FROM `materials` WHERE 1 ORDER BY `materials`.`id` DESC";
     $query_name_asc = "SELECT * FROM `materials` WHERE 1 ORDER BY `materials`.`name` ASC";
     $query_name_dsc = "SELECT * FROM `materials` WHERE 1 ORDER BY `materials`.`name` DESC";
+    
+    
     $query = $query_id_asc;
     if ($stmt = $mysqli->query($query))
     {   
