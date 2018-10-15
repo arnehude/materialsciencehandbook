@@ -1,5 +1,8 @@
 <?php
 
+require './php/lang_requirements.php';
+
+
 $en['NAV_START']                        = "Navigation";
 $en['NAV_INPUT_MATERIAL']               = "Add materials (For DEV-Purposes)";
 $en['NAV_MATERIAL_LIST']                = "Materiallist (For DEV-Purposes)";
@@ -14,11 +17,12 @@ $en['INPUT_MATERIAL_HEADING']           = "Insert material into database";
 $en['MATERIAL_NAME']                    = "Name of the material";
 $en['MATERIAL_CATEGORY']                = "Category";
 $en['MATERIAL_DENSITY']                 = "Density";
-$en['MATERIAL_PICTURE_NAME']            = "Picture of the material (<2 MByte, PNG)";
+$en['MATERIAL_PICTURE']                 = "Picture of the material (<2 MByte, PNG)";
 $en['MATERIAL_SIGN']                    = "How to recycle";
 
-include_once './php/search_signs.php';
+
 $en['MATERIAL_SIGNS']                   = search_signs();
+$en['MATERIAL_PICTURES']                = search_pictures();
 
 $en['MATERIAL_ELECTRICAL_INSULATOR']    = "Value of electical insulation";
 $en['MATERIAL_THERMAL_INSULATOR']       = "Value of thermal insulation";
@@ -31,9 +35,6 @@ $en['MATERIAL_PRICE_PER_KG']            = "Price per KG";
 $en['MATERIAL_MELTINGPOINT']            = "Meltingpoint";
 $en['MATERIAL_YOUNGS_MODULE']           = "Youngs Module";
 $en['MATERIAL_ADDITIONAL_INFORMATION']  = "Additional information";
-
-include_once './php/get_all_materials.php';
-$mysqli = new mysqli(MYSQLI_HOST, MYSQLI_USER, MYSQLI_PASS, MYSQLI_BASE);
 $en['LIST_ALL_MATERIALS']               = get_materials($mysqli);;
 
 $en['TRUE']                             = "True";

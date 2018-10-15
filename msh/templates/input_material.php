@@ -28,9 +28,9 @@
 <br/> 
     
 <div class="form-group">
-  <label class="col-md-4 control-label" for="MATERIAL_PICTURE_NAME">{{MATERIAL_PICTURE_NAME}}</label>  
+  <label class="col-md-4 control-label" for="MATERIAL_PICTURE">{{MATERIAL_PICTURE}}</label>  
   <div >
-    <input type="file" name="MATERIAL_PICTURE_NAME" id="MATERIAL_PICTURE_NAME">
+    {{MATERIAL_PICTURES}}
   </div>
 </div>
 <br/> 
