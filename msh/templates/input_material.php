@@ -46,15 +46,20 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="MATERIAL_ELECTRICAL_INSULATOR">{{MATERIAL_ELECTRICAL_INSULATOR}}</label>  
   <div >
-    <input id="customer" name="MATERIAL_ELECTRICAL_INSULATOR" type="text" class="form-control input-md">
+      <select id="printer" name="MATERIAL_ELECTRICAL_INSULATOR" class="form-control">
+        <option value="1">{{TRUE}}</option>
+        <option value="0">{{FALSE}}</option>
+  </select>
   </div>
 </div>
-   <br/> 
- 
+<br/> 
 <div class="form-group">
   <label class="col-md-4 control-label" for="MATERIAL_THERMAL_INSULATOR">{{MATERIAL_THERMAL_INSULATOR}}</label>  
   <div >
-    <input id="customer" name="MATERIAL_THERMAL_INSULATOR" type="text" class="form-control input-md">
+      <select id="printer" name="MATERIAL_THERMAL_INSULATOR" class="form-control">
+        <option value="1">{{TRUE}}</option>
+        <option value="0">{{FALSE}}</option>
+  </select>
   </div>
 </div>
 <br/> 
