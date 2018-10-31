@@ -22,11 +22,11 @@ function parse_language($to_parse, $language = 'en')
             break;
         case 'de':
             require './language/german.php';
-            $content = replace_placeholders($to_parse, @$de);
+            $content = replace_placeholders($to_parse, $de);
             break;
         case 'fr':
             require './language/french.php';
-            $content = replace_placeholders($to_parse, @$fr);
+            $content = replace_placeholders($to_parse, $fr);
             break;
 
         default:
