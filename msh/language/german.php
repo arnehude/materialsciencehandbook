@@ -1,7 +1,5 @@
 <?php
  require './php/lang_requirements.php';
-
-
 $de['NAV_START']                        = "Navigation";
 $de['NAV_INPUT_MATERIAL']               = "Materialien hinzufügen(Aus DEV-Gründen)";
 $de['NAV_MATERIAL_LIST']                = "Materialliste (Aus DEV-Gründen)";
@@ -34,7 +32,9 @@ $de['MATERIAL_PRICE_PER_KG']            = "Preis pro KG";
 $de['MATERIAL_MELTINGPOINT']            = "Schmelzpunkt";
 $de['MATERIAL_YOUNGS_MODULE']           = "Youngs Module";
 $de['MATERIAL_ADDITIONAL_INFORMATION']  = "Zusätzliche Informationen";
-$de['LIST_ALL_MATERIALS']               = get_materials($mysqli);;
+$de['LIST_ALL_MATERIALS']               = get_materials($mysqli);
+
+$de['SHOW_DENSITY']                     = "Dichte";
 
 $de['TRUE']                             = "Ja";
 $de['FALSE']                            = "Nein";
