@@ -35,6 +35,20 @@ $en['MATERIAL_ADDITIONAL_INFORMATION']  = "Additional information";
 $en['LIST_ALL_MATERIALS']               = get_materials($mysqli);
 
 $en['SHOW_DENSITY']                     = "Density";
+$en['SHOW_MATERIAL_NAME']               = "Name";
+$en['SHOW_CATEGORY']                    = "Category";
+$en['SHOW_TOPIC']                       = "Topic";
+$en['SHOW_BREAK_ELONGATION']            = "Elongation at Break";
+$en['SHOW_MELTINGPOINT']                = "Meltingpoint";
+$en['SHOW_BREAKING_POINT']              = "Breaking stress";
+$en['SHOW_YOUNGS_MODULE']               = "Youngs module";
+$en['SHOW_PPK']                         = "Price per kilogramm";
+$en['SHOW_INSULATION']                  = "Insulation";
+$en['SHOW_INSULATION_ELECTRIC']         = "Electric";
+$en['SHOW_INSULATION_THERMAL']          = "Thermal";
+$en['SHOW_INSULATION_PHONIC']           = "Phonic";
+$en['SHOW_FLAMMABILITY']                = "Flammable";
+$en['SHOW_ADDITIONAL_INFORMATION']      = "Additional information";
         
 $en['TRUE']                             = "True";
 $en['FALSE']                            = "False";
