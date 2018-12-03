@@ -32,7 +32,7 @@ $de['MATERIAL_PRICE_PER_KG']            = "Preis pro KG";
 $de['MATERIAL_MELTINGPOINT']            = "Schmelzpunkt";
 $de['MATERIAL_YOUNGS_MODULE']           = "Youngs Module";
 $de['MATERIAL_ADDITIONAL_INFORMATION']  = "Zusätzliche Informationen";
-$de['LIST_ALL_MATERIALS']               = get_materials($mysqli);
+$de['LIST_ALL_MATERIALS']               = material_output_list($mysqli);
 
 $de['SHOW_DENSITY']                     = "Dichte";
 $de['SHOW_MATERIAL_NAME']               = "Name";

@@ -34,6 +34,6 @@ function parse_language($to_parse, $language = 'en')
             $content = replace_placeholders($to_parse, $en);
             break;
     }
-    $content = controll_language($content);
+    //$content = controll_language($content);
     return $content;
 }

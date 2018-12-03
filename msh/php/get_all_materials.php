@@ -28,3 +28,55 @@ function get_materials($mysqli){
     return $content;
 }
 
+function equals_true($value){
+    if($value==1){
+        return "checked";
+    }
+    
+}
+function material_output_list($mysqli){
+    $query_id_asc = "SELECT * FROM `materials` ORDER BY `materials`.`id` ASC";
+    $query_id_des = "SELECT * FROM `materials`  ORDER BY `materials`.`id` DESC";
+    $query_name_asc = "SELECT * FROM `materials` WHERE 1 ORDER BY `materials`.`name` ASC";
+    $query_name_dsc = "SELECT * FROM `materials` WHERE 1 ORDER BY `materials`.`name` DESC";
+    
+    $query = $query_id_asc;
+    if ($stmt = $mysqli->query($query))
+    {   
+        $n =0;
+        while ($materials[$n] = $stmt->fetch_assoc()) {
+            $n++;
+        }
+        $stmt->free();
+    }
+    $n = 0;
+    $content ="";
+    foreach ($materials as $material) {           
+        $content .= '                    <tr>
+                    <form action="/php/update_mterial.php" method="post" class="form-horizontal">
+                        <td style="width: 20px;"><input type="hidden" name="ID" value="'.$material['id'].'"/>'.$material['id'].'</td>
+                        <td><input name="MATERIAL_NAME" type="text" class="form-control input-md" value="'.$material['name'].'"/></td>
+                        <td><input name="MATERIAL_CATEGORY" type="text" class="form-control input-md" value="'.$material['category'].'"/></td>
+                        <td><input name="MATERIAL_DENSITY" type="text" class="form-control input-md" value="'.$material['density'].'"/></td>
+                        <td><input type="radio"></td>
+                        <td><input type="radio"></td>
+                        <td><div class="form-check"><input name="MATERIAL_ELECTRICAL_INSULATOR" class="form-check-input" type="checkbox" value="1" '.equals_true($material['electric_insulator']).'></div></td>
+                        <td><div class="form-check"><input name="MATERIAL_THERMAL_INSULATOR" class="form-check-input" type="checkbox" value="1" '.equals_true($material['thermal_insulator']).'></div></td>
+                        <td><div class="form-check"><input name="MATERIAL_PHONIC_INSULATOR" class="form-check-input" type="checkbox" value="1" '.equals_true($material['phonic_insulator']).'></div></td>
+                        <td><div class="form-check"><input name="MATERIAL_INFLAMABLE" class="form-check-input" type="checkbox" value="1" '.equals_true($material['inflamable']).'></div></td>
+                        <td><input name="MATERIAL_MECHANICAL_STRESS" type="text" class="form-control input-md" value="'.$material['mechanical_stress'].'"></td>
+                        <td><input name="MATERIAL_ELONGATION_AT_BREAK" type="text" class="form-control input-md" value="'.$material['elongation_at_break'].'"></td>
+                        <td><input name="MATERIAL_BREAKINGPOINT" type="text" class="form-control input-md" value="'.$material['breakingpoint'].'"></td>
+                        <td><input name="MATERIAL_PRICE_PER_KG" type="text" class="form-control input-md" value="'.$material['price_per_kg'].'"></td>
+                        <td><input name="MATERIAL_MELTINGPOINT" type="text" class="form-control input-md" value="'.$material['meltingpoint'].'"></td>
+                        <td><input name="MATERIAL_YOUNGS_MODULE" type="text" class="form-control input-md" value="'.$material['youngs_module'].'"></td>
+                        <td>
+                            <button class="btn btn-success" type="submit" name="edit" value="1" style="margin-left: 5px;"><i class="fa fa-check" style="font-size: 15px;"></i></button>
+                            <button class="btn btn-danger" type="submit" name="delete" value="1" style="margin-left: 5px;"><i class="fa fa-trash" style="font-size: 15px;"></i></button>
+                        </td>
+                    </form>
+                    </tr>';
+        $n++;
+    }
+    return $content;
+}

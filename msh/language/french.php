@@ -35,7 +35,7 @@ $fr['MATERIAL_PRICE_PER_KG']            = "Prix par Kg";
 $fr['MATERIAL_MELTINGPOINT']            = "température de fusion";
 $fr['MATERIAL_YOUNGS_MODULE']           = "Module d'Young";
 $fr['MATERIAL_ADDITIONAL_INFORMATION']  = "Information supplémentaire";
-$fr['LIST_ALL_MATERIALS']               = get_materials($mysqli);;
+$fr['LIST_ALL_MATERIALS']               = material_output_list($mysqli);
 
 $fr['TRUE']                             = "vrai";
 $fr['FALSE']                            = "faux";

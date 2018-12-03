@@ -6,7 +6,7 @@
                     <h4>{{SHOW_CATEGORY}}</h4><strong>{{SHOW_TOPIC}}</strong>
                     <p>Text</p>
                 </div>
-                <div class="col-12 col-md-6 col-xl-4"><img class="rounded img-fluid d-flex" src="assets/img/bild_folgt.png" width="200px" height="200px" style="margin: 0 auto;"></div>
+                <div class="col-12 col-md-6 col-xl-4"><img class="rounded img-fluid d-flex" src="./images/pictures/00__pic_no_img.png" width="200px" height="200px" style="margin: 0 auto;"></div>
             </div>
         </div>
     </div>
@@ -62,7 +62,7 @@
                             <p>{{SHOW_INSULATION_PHONIC}}</p>
                         </div>
                         <div class="col" style="padding: 5px;"><span class="badge badge-primary" style="font-size: 1em;margin: 0 auto;">YES</span>
-                            <p>{{SHIW_FLAMMABILITY}}</p>
+                            <p>{{SHOW_FLAMMABILITY}}</p>
                         </div>
                     </div>
                 </div>

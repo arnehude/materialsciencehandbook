@@ -6,7 +6,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="MATERIAL_NAME">{{MATERIAL_NAME}}</label>  
   <div >
-    <input id="customer" name="MATERIAL_NAME" type="text" class="form-control input-md" />
+    <input name="MATERIAL_NAME" type="text" class="form-control input-md" />
   </div>
 </div>
 <br/>
@@ -14,7 +14,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="MATERIAL_CATEGORY">{{MATERIAL_CATEGORY}}</label>  
   <div >
-    <input id="customer" name="MATERIAL_CATEGORY" type="text" class="form-control input-md" />
+    <input name="MATERIAL_CATEGORY" type="text" class="form-control input-md" />
   </div>
 </div>
 <br/> 
@@ -22,7 +22,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="MATERIAL_DENSITY">{{MATERIAL_DENSITY}}</label>  
   <div >
-    <input id="customer" name="MATERIAL_DENSITY" type="text" class="form-control input-md" />
+    <input name="MATERIAL_DENSITY" type="text" class="form-control input-md" />
   </div>
 </div>
 <br/> 
@@ -46,7 +46,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="MATERIAL_ELECTRICAL_INSULATOR">{{MATERIAL_ELECTRICAL_INSULATOR}}</label>  
   <div >
-      <select id="printer" name="MATERIAL_ELECTRICAL_INSULATOR" class="form-control">
+  <select name="MATERIAL_ELECTRICAL_INSULATOR" class="form-control">
         <option value="1">{{TRUE}}</option>
         <option value="0">{{FALSE}}</option>
   </select>
@@ -56,7 +56,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="MATERIAL_THERMAL_INSULATOR">{{MATERIAL_THERMAL_INSULATOR}}</label>  
   <div >
-      <select id="printer" name="MATERIAL_THERMAL_INSULATOR" class="form-control">
+      <select name="MATERIAL_THERMAL_INSULATOR" class="form-control">
         <option value="1">{{TRUE}}</option>
         <option value="0">{{FALSE}}</option>
   </select>
@@ -67,7 +67,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="MATERIAL_PHONIC_INSULATOR">{{MATERIAL_PHONIC_INSULATOR}}</label>  
   <div >
-      <select id="printer" name="MATERIAL_PHONIC_INSULATOR" class="form-control">
+      <select name="MATERIAL_PHONIC_INSULATOR" class="form-control">
         <option value="1">{{TRUE}}</option>
         <option value="0">{{FALSE}}</option>
   </select>
@@ -78,7 +78,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="MATERIAL_INFLAMABLE">{{MATERIAL_INFLAMABLE}}</label>  
   <div >
-      <select id="printer" name="MATERIAL_INFLAMABLE" class="form-control">
+      <select name="MATERIAL_INFLAMABLE" class="form-control">
         <option value="1">{{TRUE}}</option>
         <option value="0">{{FALSE}}</option>
   </select>
@@ -89,7 +89,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="MATERIAL_MECHANICAL_STRESS">{{MATERIAL_MECHANICAL_STRESS}}</label>  
   <div >
-    <input id="customer" name="MATERIAL_MECHANICAL_STRESS" type="text" class="form-control input-md">
+    <input name="MATERIAL_MECHANICAL_STRESS" type="text" class="form-control input-md">
   </div>
 </div>    
     <br/> 
@@ -97,7 +97,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="MATERIAL_ELONGATION_AT_BREAK">{{MATERIAL_ELONGATION_AT_BREAK}}</label>  
   <div >
-    <input id="customer" name="MATERIAL_ELONGATION_AT_BREAK" type="text" class="form-control input-md">
+    <input name="MATERIAL_ELONGATION_AT_BREAK" type="text" class="form-control input-md">
   </div>
 </div>
     <br/> 
@@ -105,7 +105,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="MATERIAL_BREAKINGPOINT">{{MATERIAL_BREAKINGPOINT}}</label>  
   <div >
-    <input id="customer" name="MATERIAL_BREAKINGPOINT" type="text" class="form-control input-md">
+    <input name="MATERIAL_BREAKINGPOINT" type="text" class="form-control input-md">
   </div>
 </div>   
     <br/> 
@@ -113,7 +113,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="MATERIAL_PRICE_PER_KG">{{MATERIAL_PRICE_PER_KG}}</label>  
   <div >
-    <input id="customer" name="MATERIAL_PRICE_PER_KG" type="text" class="form-control input-md">
+    <input name="MATERIAL_PRICE_PER_KG" type="text" class="form-control input-md">
   </div>
 </div>
 <br/> 
@@ -121,7 +121,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="MATERIAL_MELTINGPOINT">{{MATERIAL_MELTINGPOINT}}</label>  
   <div >
-    <input id="customer" name="MATERIAL_MELTINGPOINT" type="text" class="form-control input-md">
+    <input name="MATERIAL_MELTINGPOINT" type="text" class="form-control input-md">
   </div>
 </div>   
 <br/> 
@@ -129,7 +129,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="MATERIAL_YOUNGS_MODULE">{{MATERIAL_YOUNGS_MODULE}}</label>  
   <div >
-    <input id="customer" name="MATERIAL_YOUNGS_MODULE" type="text" class="form-control input-md">
+    <input name="MATERIAL_YOUNGS_MODULE" type="text" class="form-control input-md">
   </div>
 </div>   
  <br/> 
