@@ -10,6 +10,10 @@
         $site = 'start';
     
     $url = './templates/'.$site.'.php';
+    $input = @$_POST['searchinput'];
+    if($site == 'search'){
+        include './php/search.php'; 
+    }
     $site_content = file_get_contents($url);    
 ?>
 
@@ -29,10 +33,11 @@
   <body>
      
     <?php 
-    echo parse_language(file_get_contents('./php/navigation.php'),$lang); ?>     
+    echo parse_language(file_get_contents('./templates/navigation.php'),$lang); ?>     
       
     <main role="main" class="col-md-12 ml-sm-auto col-lg-12 px-4">
-    <?php if(isset($site_content)){echo parse_language(($site_content),$lang);}//else{error_log(1, 404);}?>
+    <?php if(isset($site_content)&& $site != "search"){echo parse_language($site_content,$lang);}//else{error_log(1, 404);}?>
+    <?php if(isset($site_content)&& $site == "search"){echo parse_language($site_content,$lang,$fkt);}//else{error_log(1, 404);}?>
     </main>
      
     <!-- Optional JavaScript -->

@@ -13,8 +13,11 @@ function controll_language($content){
     }
 }
 
-function parse_language($to_parse, $language = 'en')
-{
+function parse_language($to_parse, $language = 'en',$fkt = null)
+{   
+    if($fkt!= NULL){
+        $to_parse = @replace_placeholders($to_parse, $fkt);
+    }
     switch ($language) {
         case 'en':
             require './language/english.php';

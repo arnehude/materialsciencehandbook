@@ -8,7 +8,14 @@ $en['NAV_LIST_CATEGORY']                = "List by Category";
 $en['NAV_SINGLE_MATERIAL']              = "Navigation";
 $en['NAV_RANDOM_MATERIAL']              = "Random material";
 $en['NAV_ABOUT']                        = "About";
+$en['NAV_SEARCH']                       = "Search";
 
+$en['SEARCH_HEADING']                   = "Search for Materials";
+$en['SEARCH_TEXT']                      = "You have searched for: ";
+$en['SEARCH_PICTURE']                   = "Picture";
+$en['SEARCH_NAME']                      = "Name";
+$en['SEARCH_CATEGORY']                  = "Category";
+$en['SEARCH_RESULTS']                   = "Results: ";
 
 $en['INPUT_MATERIAL_HEADING']           = "Insert material into database";
 $en['MATERIAL_NAME']                    = "Name of the material";
