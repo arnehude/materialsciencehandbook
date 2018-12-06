@@ -1,10 +1,11 @@
 <?php 
+    $site = @$_GET['s'];  
+    $lang = @$_GET['lang'];
+   
     require './php/session.php';
     include './php/functions.php';
     include './php/config.php';
 
-    $site = @$_GET['s'];  
-    $lang = @$_GET['lang'];
     if($site == NULL || $site == 'start')
         $site = 'start';
     

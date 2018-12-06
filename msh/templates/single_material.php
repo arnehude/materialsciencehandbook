@@ -1,4 +1,4 @@
-<div>
+<!--<div>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-6 col-xl-8">
@@ -72,21 +72,9 @@
                         <div class="progress-bar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"><span class="sr-only">50%</span></div>
                     </div>
                 </div>
-                
-                <div class="col-sm-6 col-lg-4 item"><i class="fa fa-gears icon"></i>
-                    <h3 class="name">currently unused</h3>
-                    <div class="progress">
-                        <div class="progress-bar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"><span class="sr-only">50%</span></div>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h4>{{SHOW_ADDITIONAL_INFORMATION}}</h4>
-                    <p>Additional information</p>
-                </div>
-            </div>
+            
         </div>
-    </div>
+    </div>-->
+{{SHOW_SINGLE}}
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>

@@ -1,4 +1,4 @@
-<?php
+<?php //
 require './php/lang_requirements.php';
 $en['NAV_START']                        = "Navigation";
 $en['NAV_INPUT_MATERIAL']               = "Add materials (For DEV-Purposes)";
@@ -33,7 +33,9 @@ $en['MATERIAL_MELTINGPOINT']            = "Meltingpoint";
 $en['MATERIAL_YOUNGS_MODULE']           = "Youngs Module";
 $en['MATERIAL_ADDITIONAL_INFORMATION']  = "Additional information";
 $en['LIST_ALL_MATERIALS']               = material_output_list($mysqli);
+$en['LIST_ALL_MATERIALS_DEV']           = material_output_list($mysqli, true);
 
+$en['SHOW_SINGLE']                      = @single_mat($mysqli, @$_GET['id']);
 $en['SHOW_DENSITY']                     = "Density";
 $en['SHOW_MATERIAL_NAME']               = "Name";
 $en['SHOW_CATEGORY']                    = "Category";

@@ -1,28 +1,15 @@
-    <div class="col-md-12 search-table-col">
+    <div class="col-md-8 search-table-col">
         <div class="table-responsive table-bordered table table-hover table-bordered results">
             <table class="table table-bordered table-hover">
                 <thead class="text-left bill-header cs" style="background-color: #1485ee;">
                     <tr class="d-table-row">
-                        <th>ID</th>
+                        <th>Picture</th>
                         <th>Name</th>
                         <th>Category</th>
-                        <th>Densitiy</th>
-                        <th>Picture</th>
-                        <th>Sign</th>
-                        <th>Electric Insulator</th>
-                        <th>Thermal Insulator</th>
-                        <th>Phonic<br>Insulator</th>
-                        <th>Inflamable</th>
-                        <th>Mechanical Stress</th>
-                        <th id="trs-hd" class="col-lg-2">Elon. at Break</th>
-                        <th id="trs-hd" class="col-lg-3">Breaking Point</th>
-                        <th id="trs-hd" class="col-lg-2">Ppkg</th>
-                        <th id="trs-hd" class="col-lg-2">Melting Point</th>
-                        <th id="trs-hd" class="col-lg-2">Youngs Module</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
+<!--                    <tr>
                     <form action="/php/update_mterial.php" method="post" class="form-horizontal">
                         <td><input type="hidden" name="ID" value=""/></td>
                         <td><input name="MATERIAL_NAME" type="text" class="form-control col-sm-2" /></td>
@@ -45,7 +32,7 @@
                             <button class="btn btn-danger" type="submit" name="delete" value="1" style="margin-left: 5px;"><i class="fa fa-trash" style="font-size: 15px;"></i></button>
                         </td>
                     </form>
-                    </tr>
+                    </tr>-->
                     {{LIST_ALL_MATERIALS}}
                 </tbody>
             </table>

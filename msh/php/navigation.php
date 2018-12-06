@@ -9,7 +9,7 @@
             <a class="nav-link" href="/?s=input_material">{{NAV_INPUT_MATERIAL}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/?s=list_all">{{NAV_MATERIAL_LIST}}</a>
+            <a class="nav-link" href="/?s=list_all_dev">{{NAV_MATERIAL_LIST}}</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/?s=list_all">{{NAV_LIST_ALL}}</a>
@@ -18,7 +18,7 @@
             <a class="nav-link" href="/?s=list_catergory">{{NAV_LIST_CATEGORY}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/?s=random_material">{{NAV_RANDOM_MATERIAL}}</a>
+            <a class="nav-link" href="/templates/random_material.php">{{NAV_RANDOM_MATERIAL}}</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/?s=about">{{NAV_ABOUT}}</a>
