@@ -1,7 +1,7 @@
     <div class="col-md-8 search-table-col">
-        <div class="table-responsive table-bordered table table-hover table-bordered results">
+        <div class="table-responsive table-bordered table table-hover table-bordered border border-primary rounded">
             <table class="table table-bordered table-hover">
-                <thead class="text-left bill-header cs" style="background-color: #1485ee;">
+                <thead class="text-left bill-header cs ">
                     <tr class="d-table-row">
                         <th>Picture</th>
                         <th>Name</th>
