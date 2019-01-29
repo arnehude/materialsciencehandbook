@@ -1,5 +1,5 @@
     <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Material Science Handbook</a>
+      <a class="navbar-brand" href="/">Material Science Handbook</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -14,9 +14,10 @@
           <li class="nav-item">
             <a class="nav-link" href="/?s=list_all">{{NAV_LIST_ALL}}</a>
           </li>
-          <li class="nav-item">
+<!--          <li class="nav-item">
             <a class="nav-link" href="/?s=list_catergory">{{NAV_LIST_CATEGORY}}</a>
-          </li>
+          </li>-->
+
           <li class="nav-item">
               <a class="nav-link" href="/templates/random_material.php">{{NAV_RANDOM_MATERIAL}}</a>
           </li>

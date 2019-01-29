@@ -26,8 +26,8 @@ class materials{
     }    
     public function filter($string){
         return filter_var($string, FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-    }            
-    private function mysqlquery($query){  
+    }           
+    private function mysql(){
         $connect = mysqli_connect(
                 MYSQLI_HOST, 
                 MYSQLI_USER, 
@@ -40,7 +40,24 @@ class materials{
         }
         elseif ($connect) { 
             //echo 'DB OK';   
+            return $connect;
+        }
+    }
+    private function mysqlquery($query){  
+        $connect = mysqli_connect(
+                MYSQLI_HOST, 
+                MYSQLI_USER, 
+                MYSQLI_PASS, 
+                MYSQLI_BASE);
+        
+        if(!$connect){
+            echo mysqli_error($connect);
+            echo 'NO CONNECTION TO DATABASE';
+        }
+        elseif ($connect) { 
+            //echo 'DB OK';               
             return mysqli_fetch_array(mysqli_query($connect, $query));
+            $connect->close();
         }
         else{
             echo 'UNDEFINED ERROR';
@@ -53,7 +70,8 @@ class materials{
         return $data;        
     }
     
-    public function save_material($mysqli,$post){
+    public function save_material($post){
+        $mysqli = $this->mysql();
         $d = $this->get_material($post);
         
         $sql = "INSERT INTO `materials` (
@@ -79,7 +97,7 @@ class materials{
               '".$d['MATERIAL_CATEGORY']."',
               '".$d['MATERIAL_DENSITY']."',
               '".$d['MATERIAL_PICTURE_NAME']."',
-              '".$d['MATERIAL_SIGN']."',
+              '".$d['MATERIAL_SIGN_NAME']."',
                   
               '".$d['MATERIAL_ELECTRICAL_INSULATOR']."',
               '".$d['MATERIAL_THERMAL_INSULATOR']."',
@@ -95,16 +113,16 @@ class materials{
                   
               '".$d['MATERIAL_ADDITIONAL_INFORMATION']."',
             'CURRENT_TIMESTAMP');";       
-        if($mysqli->query($sql)){
+        //if($mysqli->query($sql)){
             $url = "/?s=input_material";
             header("Location: $url");
-        }else{
-            echo 'error';
-        }
+        //}else{
+        //    echo 'error';
+        //}
     }
 }
 
 if (isset($_POST['submit'])){
     $mat = new materials;
-    $mat->save_material($mysqli,$_POST);    
+    $mat->save_material($_POST);    
 }
