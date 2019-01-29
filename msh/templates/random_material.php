@@ -9,6 +9,6 @@ while ($id = $stmt->fetch_assoc()) {
         $ids[$n] = $id['id'];
         $n++;
 }
-$material_id_to_show = array_rand($ids,1);
+$material_id_to_show = $ids[array_rand($ids,1)];
 header("Location: /?s=single_material&id=$material_id_to_show");
 
