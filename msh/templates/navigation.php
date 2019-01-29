@@ -17,6 +17,7 @@
 <!--          <li class="nav-item">
             <a class="nav-link" href="/?s=list_catergory">{{NAV_LIST_CATEGORY}}</a>
           </li>-->
+
           <li class="nav-item">
               <a class="nav-link" href="/templates/random_material.php">{{NAV_RANDOM_MATERIAL}}</a>
           </li>

@@ -7,7 +7,6 @@ function search ($input, $any = false){
     $search_query = "SELECT `id`,`name`,`category`,`picture` FROM `materials` WHERE (`name` LIKE '%%$escaped%%') OR (`category` LIKE '%%$escaped%%') OR (`additional_information` LIKE '%%$escaped%%')";
     if($any)
         $search_query = "SELECT `id`,`name`,`category`,`picture` FROM `materials` WHERE 1')";
-
     $db_result = $mysqli->query($search_query);
     $count = mysqli_num_rows($db_result);
     
@@ -62,5 +61,4 @@ if(isset($input) || $input != '' || $input!= " "){
     $fkt['_HC_'] = hitcount("", true);
     $fkt['_RL_'] = search("", true);
 }
-
 ?>
