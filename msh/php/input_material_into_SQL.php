@@ -113,12 +113,12 @@ class materials{
                   
               '".$d['MATERIAL_ADDITIONAL_INFORMATION']."',
             'CURRENT_TIMESTAMP');";       
-        //if($mysqli->query($sql)){
+        if($mysqli->query($sql)){
             $url = "/?s=input_material";
             header("Location: $url");
-        //}else{
-        //    echo 'error';
-        //}
+        }else{
+            echo 'error';
+        }
     }
 }
 

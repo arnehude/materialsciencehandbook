@@ -61,7 +61,7 @@ function material_output_list($mysqli, $dev = false){
                 $even = "even";
             }
         $content .= '<tr id="r'.$o.'" class="'.$even.'">
-                    <form action="/php/update_mterial.php" method="post" class="form-horizontal">
+                    <form name="mat'.$material['id'].'" action="/php/update_material.php" method="post" class="form-horizontal">
                         <td style="width: 20px;"><input type="hidden" name="ID" value="'.$material['id'].'"/>'.$material['id'].'</td>
                         <td><input name="MATERIAL_NAME" type="text" class="form-control input-md" value="'.$material['name'].'"/></td>
                         <td><input name="MATERIAL_CATEGORY" type="text" class="form-control input-md" value="'.$material['category'].'"/></td>
@@ -80,7 +80,7 @@ function material_output_list($mysqli, $dev = false){
                         <td><input name="MATERIAL_YOUNGS_MODULE" type="text" class="form-control input-sm xsm" value="'.$material['youngs_module'].'"></td>
                         <td>
                             <button class="btn btn-success" type="submit" name="edit" value="1" style="margin-left: 5px;"><i class="fa fa-check" style="font-size: 15px;"></i></button>
-                            <button class="btn btn-danger" type="submit" name="delete" value="1" style="margin-left: 5px;"><i class="fa fa-trash" style="font-size: 15px;"></i></button>
+                            <button onclick="erase('.$material['id'].')" class="btn btn-danger" type="submit" name="delete" value="1" style="margin-left: 5px;"><i class="fa fa-trash" style="font-size: 15px;"></i></button>
                         </td>
                     </form>
                     </tr>';
