@@ -148,7 +148,7 @@
                 </div>
         </div>
         <div class="container bg-dark border border-dark rounded">
-        <div  style="padding: 10px;" class="row"><h4 style="color:white">Legend for highest values<h4></div>
+        <div  style="padding: 10px;" class="row"><h4 style="color:white">{{LEGEND}}<h4></div>
         <div  style="padding: 10px;" class="row bg-light">            
             <div class="col">10^</div>
             <div class="col rounded" style="margin:2px;background-color: lime">-2</div>

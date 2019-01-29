@@ -1,8 +1,8 @@
 <?php //
 require './php/lang_requirements.php';
 $en['NAV_START']                        = "Navigation";
-$en['NAV_INPUT_MATERIAL']               = "Add materials (For DEV-Purposes)";
-$en['NAV_MATERIAL_LIST']                = "Material list (For DEV-Purposes)";
+$en['NAV_INPUT_MATERIAL']               = "Add materials";
+$en['NAV_MATERIAL_LIST']                = "Material list";
 $en['NAV_LIST_ALL']                     = "List all";
 $en['NAV_LIST_CATEGORY']                = "List by Category";
 $en['NAV_SINGLE_MATERIAL']              = "Navigation";
@@ -13,6 +13,7 @@ $en['NAV_LANGUAGE']                     = "Language";
 $en['NAV_EN']                           = "English";
 $en['NAV_FR']                           = "French";
 $en['NAV_DE']                           = "German";
+$en['LEGEND']                           = "Legend for value of decimal power";
 
 $en['SEARCH_HEADING']                   = "Search for Materials";
 $en['SEARCH_TEXT']                      = "You have searched for: ";

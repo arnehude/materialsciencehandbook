@@ -9,6 +9,11 @@ $de['NAV_SINGLE_MATERIAL']              = "Navigation";
 $de['NAV_RANDOM_MATERIAL']              = "Zufälliges Material";
 $de['NAV_ABOUT']                        = "Über uns";
 $de['NAV_SEARCH']                       = "Suche";
+$de['NAV_LANGUAGE']                     = "Sprache";
+$de['NAV_EN']                           = "Englisch";
+$de['NAV_FR']                           = "Französisch";
+$de['NAV_DE']                           = "Deutsch";
+$de['LEGEND']                           = "Legende für Höhe der Zehnerpotenz";
 
 $de['SEARCH_HEADING']                   = "Materialsuche";
 $de['SEARCH_TEXT']                      = "Ihre Suche: ";
