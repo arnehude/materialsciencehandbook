@@ -9,6 +9,10 @@ $en['NAV_SINGLE_MATERIAL']              = "Navigation";
 $en['NAV_RANDOM_MATERIAL']              = "Random material";
 $en['NAV_ABOUT']                        = "About";
 $en['NAV_SEARCH']                       = "Search";
+$en['NAV_LANGUAGE']                     = "Language";
+$en['NAV_EN']                           = "English";
+$en['NAV_FR']                           = "French";
+$en['NAV_DE']                           = "German";
 
 $en['SEARCH_HEADING']                   = "Search for Materials";
 $en['SEARCH_TEXT']                      = "You have searched for: ";

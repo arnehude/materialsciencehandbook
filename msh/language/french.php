@@ -11,6 +11,7 @@ $fr['NAV_LIST_CATEGORY']                = "Listes par catégorie";
 $fr['NAV_SINGLE_MATERIAL']              = "Navigation";
 $fr['NAV_RANDOM_MATERIAL']              = "Matériaux aléatoire";
 $fr['NAV_ABOUT']                        = "à propos";
+$fr['NAV_SEARCH']                       = "Recherche";
 
 
 $fr['INPUT_MATERIAL_HEADING']           = "Insérer un matériaux dans la database";
@@ -36,7 +37,9 @@ $fr['MATERIAL_MELTINGPOINT']            = "température de fusion";
 $fr['MATERIAL_YOUNGS_MODULE']           = "Module d'Young";
 $fr['MATERIAL_ADDITIONAL_INFORMATION']  = "Information supplémentaire";
 $fr['LIST_ALL_MATERIALS']               = material_output_list($mysqli);
+$fr['LIST_ALL_MATERIALS_DEV']           = material_output_list($mysqli, true);
 
+$fr['SHOW_SINGLE']                      = @single_mat($mysqli, @$_GET['id']);
 $fr['TRUE']                             = "vrai";
 $fr['FALSE']                            = "faux";
 $fr['SUBMIT']                           = "soumettre";

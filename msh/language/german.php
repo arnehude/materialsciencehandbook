@@ -1,8 +1,8 @@
 <?php
 require './php/lang_requirements.php';
 $de['NAV_START']                        = "Navigation";
-$de['NAV_INPUT_MATERIAL']               = "Materialien hinzufügen(Aus DEV-Gründen)";
-$de['NAV_MATERIAL_LIST']                = "Materialliste (Aus DEV-Gründen)";
+$de['NAV_INPUT_MATERIAL']               = "Materialien hinzufügen";
+$de['NAV_MATERIAL_LIST']                = "Materialliste";
 $de['NAV_LIST_ALL']                     = "Alle anzeigen";
 $de['NAV_LIST_CATEGORY']                = "Kategorien";
 $de['NAV_SINGLE_MATERIAL']              = "Navigation";

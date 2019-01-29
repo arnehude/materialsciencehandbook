@@ -64,9 +64,7 @@ class materials{
         }
     }
     public function save_material($post){
-        $mysqli = $this->mysql();
-        $d = $this->get_material($post);
-        
+        $d = $this->get_material($post);        
         $sql = "INSERT INTO `materials` (
             `name`,
             `category`,
@@ -106,8 +104,8 @@ class materials{
                   
               '".$d['MATERIAL_ADDITIONAL_INFORMATION']."',
             'CURRENT_TIMESTAMP');";       
-        if($mysqli->query($sql)){
-            $url = "/?s=input_material";
+        if($this->mysqlquery($sql)){
+            $url = "/?s=list_all_dev";
             header("Location: $url");
         }else{
             echo 'error';
@@ -145,8 +143,12 @@ class materials{
         }
     }
 }
-
-if (isset($_POST['ID'])){
+var_dump($_POST);
+if($_POST['edit'] == 1 && $_POST['ID']==""){
+        $mat = new materials;
+        $mat->save_material($_POST);        
+}
+if (isset($_POST['ID'])&& $_POST["ID"]!=""){
     if($_POST['delete']==1 && isset($_POST['ID'])){
         $mat = new materials;
         $mat->erase_material($_POST);
@@ -155,4 +157,5 @@ if (isset($_POST['ID'])){
         $mat = new materials;
         $mat->update_material($_POST);
     }
+    
 }
