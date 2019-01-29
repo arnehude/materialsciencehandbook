@@ -10,6 +10,10 @@
         $site = 'start';
     
     $url = './templates/'.$site.'.php';
+    $input = @$_POST['searchinput'];
+    if($site == 'search'){
+        include './php/search.php'; 
+    }
     $site_content = file_get_contents($url);    
 ?>
 
@@ -24,15 +28,20 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
     <!-- Custom styles for this template -->
     <link href="css/dashboard.css" rel="stylesheet" />
-    <title>Hello, world!</title>
+    <link href="css/table.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+    <title>MSH - Exchange 2018</title>
   </head>
   <body>
      
     <?php 
-    echo parse_language(file_get_contents('./php/navigation.php'),$lang); ?>     
+    echo parse_language(file_get_contents('./templates/navigation.php'),$lang); ?>     
       
     <main role="main" class="col-md-12 ml-sm-auto col-lg-12 px-4">
-    <?php if(isset($site_content)){echo parse_language(($site_content),$lang);}//else{error_log(1, 404);}?>
+    <?php if(isset($site_content)&& $site != "search"){echo parse_language($site_content,$lang);}//else{error_log(1, 404);}?>
+    <?php if(isset($site_content)&& $site == "search"){echo parse_language($site_content,$lang,$fkt);}//else{error_log(1, 404);}?>
     </main>
      
     <!-- Optional JavaScript -->

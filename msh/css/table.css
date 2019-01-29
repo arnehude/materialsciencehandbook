@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 14.01.2019, 21:05:29
+    Author     : Arne Hude
+*/
+
+.rotate_90 {
+    height: 80px;
+    margin-top: -40px;
+    margin-bottom: 50px;
+    padding-top: 0;
+    
+    // -moz-transform: rotate(-30.0deg);  /* FF3.5+ */
+    // -o-transform: rotate(-30.0deg);  /* Opera 10.5 */
+    // -webkit-transform: rotate(-30.0deg);  /* Saf3.1+, Chrome */
+    //         filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083);  /* IE6,IE7 */
+    //     -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0.083)"; /* IE8 */
+}
+.xsm{
+    width: 50px;
+    padding: 2px;
+}
+.even{
+    background-color: #dceef6;
+}
