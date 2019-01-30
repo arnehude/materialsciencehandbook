@@ -13,7 +13,7 @@ $en['NAV_LANGUAGE']                     = "Language";
 $en['NAV_EN']                           = "English";
 $en['NAV_FR']                           = "French";
 $en['NAV_DE']                           = "German";
-$en['LEGEND']                           = "Legend for value of decimal power";
+$en['SHOW_LEGEND']                      = "Legend for value of decimal power";
 
 $en['SEARCH_HEADING']                   = "Search for Materials";
 $en['SEARCH_TEXT']                      = "You have searched for: ";
@@ -33,13 +33,13 @@ $en['MATERIAL_SIGN']                    = "How to recycle";
 $en['MATERIAL_SIGNS']                   = search_signs();
 $en['MATERIAL_PICTURES']                = search_pictures();
 
-$en['MATERIAL_ELECTRICAL_INSULATOR']    = "Value of electrical insulation";
-$en['MATERIAL_THERMAL_INSULATOR']       = "Value of thermal insulation";
-$en['MATERIAL_PHONIC_INSULATOR']        = "Is the material a phonic insulator?";
-$en['MATERIAL_INFLAMABLE']              = "Is it inflammable?";
+$en['MATERIAL_ELECTRICAL_INSULATOR']    = "Is it biodegradable?";
+$en['MATERIAL_THERMAL_INSULATOR']       = "Is it renewable?";
+$en['MATERIAL_PHONIC_INSULATOR']        = "Is it recycleable??";
+$en['MATERIAL_INFLAMABLE']              = "Is it flammable?";
 $en['MATERIAL_MECHANICAL_STRESS']       = "Mechanical stress till it bends";
 $en['MATERIAL_ELONGATION_AT_BREAK']     = "Elongation at break";
-$en['MATERIAL_BREAKINGPOINT']           = "Mechanical stress till it breaks";
+$en['MATERIAL_BREAKINGPOINT']           = "Tensile stress";
 $en['MATERIAL_PRICE_PER_KG']            = "Price per KG";
 $en['MATERIAL_MELTINGPOINT']            = "Meltingpoint";
 $en['MATERIAL_YOUNGS_MODULE']           = "Youngs Module";
