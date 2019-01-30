@@ -55,12 +55,12 @@ $de['SHOW_TOPIC']                       = "Thema";
 $de['SHOW_BREAK_ELONGATION']            = "Bruchdehnung";
 $de['SHOW_MELTINGPOINT']                = "Schmelzpunkt";
 $de['SHOW_BREAKING_POINT']              = "Bruchspannung";
-$de['SHOW_YOUNGS_MODULE']               = "Youngs Modul";
+$de['SHOW_YOUNGS_MODULE']               = "Elastizitätsmodul";
 $de['SHOW_PPK']                         = "Preis pro Kilogramm";
-$de['SHOW_INSULATION']                  = "Insolator";
-$de['SHOW_INSULATION_ELECTRIC']         = "Elektrisch";
-$de['SHOW_INSULATION_THERMAL']          = "Thermal";
-$de['SHOW_INSULATION_PHONIC']           = "Phonisch";
+$de['SHOW_INSULATION']                  = "Besondere ";
+$de['SHOW_INSULATION_ELECTRIC']         = "Biologisch abbaubar";
+$de['SHOW_INSULATION_THERMAL']          = "Erneuerbarer Rohstoff";
+$de['SHOW_INSULATION_PHONIC']           = "Recyclebar";
 $de['SHOW_FLAMMABILITY']                = "Entzündlich";
 $de['SHOW_ADDITIONAL_INFORMATION']      = "Zusätzliche Infromationen";
 
