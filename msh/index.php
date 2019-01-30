@@ -12,7 +12,7 @@
     include './php/config.php';
 
     if($site == NULL || $site == 'start')
-        $site = 'start';
+        $site = 'list_all';
     
     $url = './templates/'.$site.'.php';
     $input = @$_POST['searchinput'];

@@ -68,6 +68,7 @@ function material_output_list($mysqli, $dev = false){
                         <td><input name="MATERIAL_DENSITY" type="text" class="form-control input-md xsm" value="'.$material['density'].'"/></td>
                         <!--<td><input type="radio"> &nbsp;</td>-->
                         <!--<td><input type="radio"> &nbsp;</td>-->
+                         <input type="hidden" name="MATERIAL_PICTURE_NAME" value="00__pic_no_img.png">
                         <td><div class="form-check"><input name="MATERIAL_ELECTRICAL_INSULATOR" class="form-check-input" type="checkbox" value="1" '.equals_true($material['electric_insulator']).'></div></td>
                         <td><div class="form-check"><input name="MATERIAL_THERMAL_INSULATOR" class="form-check-input" type="checkbox" value="1" '.equals_true($material['thermal_insulator']).'></div></td>
                         <td><div class="form-check"><input name="MATERIAL_PHONIC_INSULATOR" class="form-check-input" type="checkbox" value="1" '.equals_true($material['phonic_insulator']).'></div></td>
@@ -89,7 +90,7 @@ function material_output_list($mysqli, $dev = false){
     } elseif (!$dev) {
         foreach ($materials as $material) {           
         $content .= '<tr>
-                        <td><a href="/?s=single_material&id='.$material['id'].'"><img src="./images/pictures/'.$material['picture'].'" alt="'.$material['name'].'" width="100" height="100" /></a></td>
+                        <td><a href="/?s=single_material&id='.$material['id'].'"><img src="./images/pictures/'.$material['picture'].'" alt="'.$material['name'].'" width="50" height="50" /></a></td>
                         <td><a href="/?s=single_material&id='.$material['id'].'">'.$material['name'].'</a></td>
                         <td><a href="/?s=single_material&id='.$material['id'].'">'.$material['category'].'</a></td>
                     </tr>';

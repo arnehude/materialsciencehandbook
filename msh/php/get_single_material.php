@@ -96,7 +96,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4 item">
                     <h3 class="name" style="margin: 0 0 10px;">{{SHOW_BREAK_ELONGATION}}</h3>
-                    '.$materials[0]['elongation_at_break'].'&nbsp;m
+                    '.$materials[0]['elongation_at_break'].'&nbsp;%
                     <div class="progress">                        
                         '.progressbar($mysqli, "elongation_at_break",$materials[0]['elongation_at_break']).'
                     </div>
@@ -117,7 +117,7 @@
                 </div>
                 <div class="col-sm-6 col-lg-4 item">
                     <h3 class="name">{{SHOW_YOUNGS_MODULE}}</h3>
-                    '.$materials[0]['youngs_module'].'&nbsp;Pa
+                    '.$materials[0]['youngs_module'].'&nbsp;GPa
                     <div class="progress">
                         '.progressbar($mysqli, "youngs_module",$materials[0]['youngs_module']).'
                     </div>
