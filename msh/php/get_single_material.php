@@ -42,7 +42,7 @@
                 break;
         }
         $progress = round(($max/100) * $value,2);
-        return "<div class=\"progress-bar\" aria-valuenow=\"$value\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: $progress%;$color\"><span class=\"sr-only\">50%</span></div>";
+        return "<div class=\"progress-bar\" aria-valuenow=\"$value\" aria-valuemin=\"0\" aria-valuemax=\"100\" style=\"width: $value%;$color\"><span class=\"sr-only\">50%</span></div>";
     }
     function trueorfalse($value){
         if($value){
@@ -129,9 +129,12 @@
                         '.progressbar($mysqli, "price_per_kg",$materials[0]['price_per_kg']).'
                     </div>
                 </div>
+            </div>
+            <br/><br/>
+            <div class="row features">
                 <div class="col-sm-12 col-lg-12 item">
                     <h3 class="name">{{SHOW_INSULATION}}</h3>
-                    <div class="row justify-content-center align-items-center">
+                    <div class="row align-items-center">
                         <div class="col" style="padding: 5px;"><span class="badge badge-'.red_or_green(trueorfalse($materials[0]['electric_insulator'])).'" style="font-size: 1em;margin: 0 auto;">'.trueorfalse($materials[0]['electric_insulator']).'</span>
                             <p>{{SHOW_INSULATION_ELECTRIC}}</p>
                         </div>
@@ -141,7 +144,7 @@
                         <div class="col" style="padding: 5px;"><span class="badge badge-'.red_or_green(trueorfalse($materials[0]['phonic_insulator'])).'" style="font-size: 1em;margin: 0 auto;">'.trueorfalse($materials[0]['phonic_insulator']).'</span>
                             <p>{{SHOW_INSULATION_PHONIC}}</p>
                         </div>
-                        <div class="col" style="padding: 5px;"><span class="badge badge-'.red_or_green(trueorfalse($materials[0]['inflamable'])).'" style="font-size: 1em;margin: 0 auto;">'.trueorfalse($materials[0]['inflamable']).'</span>
+                        <div class="col" style="padding: 5px;"><span class="badge badge-'.red_or_green(trueorfalse($materials[0]['inflamable'])).'" style="font-size: 1em;margin: 0 auto;">'.trueorfalse(!$materials[0]['inflamable']).'</span>
                             <p>{{SHOW_FLAMMABILITY}}</p>
                         </div>
                     </div>
