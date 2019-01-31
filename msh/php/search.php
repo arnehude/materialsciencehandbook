@@ -1,5 +1,4 @@
 <?php
-//require_once $_SERVER['DOCUMENT_ROOT'].'/php/config.php';
 function search ($input, $any = false){
     $mysqli = new mysqli(MYSQLI_HOST, MYSQLI_USER, MYSQLI_PASS, MYSQLI_BASE);
     $escaped = htmlspecialchars($input);

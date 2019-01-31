@@ -12,7 +12,7 @@ function search_pictures(){
                 <div class="input-group-text">
                     <input type="checkbox" id="img_'.$sign.'" name="MATERIAL_PICTURE" value="'.$sign.'"/>'
                         . '<label class="form-check-label img-thumbnail" for="img_'.$sign.'">'
-                            . '<img src="'.$directory.'/'.$sign.'" alt="'. str_replace(".png", "", $sign).'"  style="max-width:200px;max-height:200px;"/>'
+                            . '<img src="'.$directory.'/'.$sign.'" alt="'. str_replace(".png", "", $sign).'"  style="max-width:100px;max-height:100px;"/>'
                         . '</label>'
                 .'</div>
             </div>

@@ -1,14 +1,19 @@
 <?php
 require './php/lang_requirements.php';
 $de['NAV_START']                        = "Navigation";
-$de['NAV_INPUT_MATERIAL']               = "Materialien hinzufügen(Aus DEV-Gründen)";
-$de['NAV_MATERIAL_LIST']                = "Materialliste (Aus DEV-Gründen)";
+$de['NAV_INPUT_MATERIAL']               = "Materialien hinzufügen";
+$de['NAV_MATERIAL_LIST']                = "Materialliste";
 $de['NAV_LIST_ALL']                     = "Alle anzeigen";
 $de['NAV_LIST_CATEGORY']                = "Kategorien";
 $de['NAV_SINGLE_MATERIAL']              = "Navigation";
 $de['NAV_RANDOM_MATERIAL']              = "Zufälliges Material";
 $de['NAV_ABOUT']                        = "Über uns";
 $de['NAV_SEARCH']                       = "Suche";
+$de['NAV_LANGUAGE']                     = "Sprache";
+$de['NAV_EN']                           = "Englisch";
+$de['NAV_FR']                           = "Französisch";
+$de['NAV_DE']                           = "Deutsch";
+$de['LEGEND']                           = "Legende für Höhe der Zehnerpotenz";
 
 $de['SEARCH_HEADING']                   = "Materialsuche";
 $de['SEARCH_TEXT']                      = "Ihre Suche: ";
@@ -50,14 +55,16 @@ $de['SHOW_TOPIC']                       = "Thema";
 $de['SHOW_BREAK_ELONGATION']            = "Bruchdehnung";
 $de['SHOW_MELTINGPOINT']                = "Schmelzpunkt";
 $de['SHOW_BREAKING_POINT']              = "Bruchspannung";
-$de['SHOW_YOUNGS_MODULE']               = "Youngs Modul";
+$de['SHOW_YOUNGS_MODULE']               = "Elastizitätsmodul";
 $de['SHOW_PPK']                         = "Preis pro Kilogramm";
-$de['SHOW_INSULATION']                  = "Insolator";
-$de['SHOW_INSULATION_ELECTRIC']         = "Elektrisch";
-$de['SHOW_INSULATION_THERMAL']          = "Thermal";
-$de['SHOW_INSULATION_PHONIC']           = "Phonisch";
+$de['SHOW_INSULATION']                  = "Besondere Eigenschaften";
+$de['SHOW_INSULATION_ELECTRIC']         = "Biologisch abbaubar";
+$de['SHOW_INSULATION_THERMAL']          = "Erneuerbarer Rohstoff";
+$de['SHOW_INSULATION_PHONIC']           = "Recyclebar";
 $de['SHOW_FLAMMABILITY']                = "Entzündlich";
 $de['SHOW_ADDITIONAL_INFORMATION']      = "Zusätzliche Infromationen";
+$de['SHOW_LEGEND']                      = "Farblegende";
+
 
 $de['TRUE']                             = "Ja";
 $de['FALSE']                            = "Nein";
